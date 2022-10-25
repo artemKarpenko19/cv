@@ -120,7 +120,7 @@ img {
 .list-title:before {
     content: attr(data-year);
     position: absolute;
-    right:calc(100% + 50px);
+    right:calc(100% + 70px);
     top:0;
     font-size: calc(8px + 14 * (100vw / 1180));
     white-space:nowrap;
