@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.line {
+  height: 50px;
+  background-color: #3d6981;
+}
+.top-head {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.top-head__photo {
+  width: 33.3%;
+}
+.top-head__photo img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.top-head__contacts {
+  width: 33.3%;
+  list-style: none;
+  margin: 0;
+  padding: 150px 0 0 0;
+  text-align: right;
+  font-size: calc(8px + 10 * (100vw / 1180));
+}
+.top-head__contacts a {
+  text-decoration: none;
+  color: inherit;
+}
+.top-head__contacts a:hover {
+  color: #3d6981;
+}
+
+.top-head__name {
+  width: 33.3%;
+}
+.top-head__name h1 {
+  margin: 0;
+  padding: 0;
+  font-size: calc(16px + 34 * (100vw / 1180));
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (min-width: 767px){
+    .top-head__name h1 {
+     font-size: calc(16px + (34 + 34 * 0.7) * ((100vw - 320px) / 1180));
+    }
+   }
+.top-head__name h1 span {
+  color: #3d6981;
+}
+.top-head__position {
+  margin: 0;
+  font-size: calc(12px + 10 * (100vw / 1180));
+  text-transform: uppercase;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-title span:first-child {
+  width: 33.3%;
+  flex-shrink: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: calc(8px + 22 * (100vw / 1180));
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 10px 0;
+  padding: 0 70px 0 0;
+  text-align: right;
+}
+.section-title span:last-child {
+  width: 66.6%;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  background-color: #3d6981;
+}
+
+.list {
+  margin: 0 0 0 33.3%;
+  padding: 0 0 20px 0;
+  font-size: calc(8px + 16 * (100vw / 1180));
+  position: relative;
+  list-style-position: inside
+}
+
+.list-title {
+  text-transform: uppercase;
+  margin: 0 0 0 33.3%;
+  padding: 0 0 20px 0;
+  font-size: calc(8px + 14 * (100vw / 1180));
+  position: relative;
+}
+.list-title.edu {
+    text-transform: none;
+  }
+
+.list-title:before {
+    content: attr(data-year);
+    position: absolute;
+    right:calc(100% + 50px);
+    top:0;
+    font-size: calc(8px + 14 * (100vw / 1180));
+    white-space:nowrap;
+
+}
+.section-text {
+    margin: 0 0 0 33.3%;
+    padding: 0 0 20px 0;
+    font-size: calc(8px + 16 * (100vw / 1180));
+    position: relative;
+    list-style-position: inside
+  }
